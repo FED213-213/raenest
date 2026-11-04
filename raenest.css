@@ -158,6 +158,7 @@ background-color: #4f3fd7;
     
 }
 .produc{
+    cursor: pointer;
     position: relative;
 }
 .dropdown{
@@ -171,7 +172,7 @@ background-color: #4f3fd7;
    padding: 10px 10px 40px 10px;
    display: none;
 }
-.prodc:hover .dropdown{
+.produc:hover .dropdown{
     display: block;
 }
 .everytin{
