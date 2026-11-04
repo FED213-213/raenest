@@ -603,8 +603,8 @@ align-items: center;
 font-family: sans-serif;
    color: white;
    margin-bottom: 0;
-  
-   width: 350px;
+  overflow-wrap: break-word;
+   width: 87vw;
 }
 .lamino{
     width: 100px;
@@ -627,4 +627,19 @@ font-family: sans-serif;
     background-color: white;
     padding: 0 px 0;
  }
+    .getting{
+    font-size: 4vw;
+    font-weight: 400;
+    margin: 0;
+}
+.qr-code{
+    display: none;
+}
+.yoruba{
+    width: 80vw;
+    color: white;
+    overflow-wrap: break-word;
+
+
+}
 }
