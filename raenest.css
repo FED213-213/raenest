@@ -14,7 +14,7 @@ body{
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 999;
     background-color: white;
     padding: 0 px 0;
  }
@@ -160,16 +160,32 @@ background-color: #4f3fd7;
 .produc{
     cursor: pointer;
     position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 .dropdown{
     background-color: white;
    width: 340px;
-   border-top: 1px solid #dadadac4;
+   border: 0.1px solid #dadadac4;
    position: absolute;
    border-radius: 15px;
    left: -130px;
-   bottom: -550px;
+   bottom: -520px;
    padding: 10px 10px 40px 10px;
+   display: none;
+   border-top: 1px solid #dadadac4;
+}
+.comedown{
+    background-color: white;
+   width: 340px;
+   border: 0.1px solid #dadadac4;
+   position: absolute;
+   border-radius: 15px;
+   padding: 10px 10px 40px 10px;
+   left: -140px;
+   bottom: -220px;
+   border-top: 1px solid #dadadac4;
    display: none;
 }
 .produc:hover .dropdown{
@@ -400,7 +416,7 @@ margin-top: 23px;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #4f3fd7;
-    height: 130vh;
+    height: 125vh;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -426,7 +442,17 @@ margin-top: 23px;
     animation: moving 17s linear infinite;
 
 }
-
+.aar{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    height: 80px;
+    align-items: center;
+    display: flex;
+}
+.aar:hover .comedown{
+    display: block;
+}
 .amen{
   display: flex;  
   width: 50%;
