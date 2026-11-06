@@ -454,9 +454,9 @@ margin-top: 23px;
     max-width: 100%;
     box-sizing: border-box;
     background-position: left bottom 80px;
-    display: flex;
-    
-    
+   display: flex;
+    align-items: center;
+    justify-content: center;
     overflow-y: hidden;
     overflow-x: hidden;
    
@@ -468,16 +468,15 @@ margin-top: 23px;
     gap: 20px;
     padding: 60px 0 40px 0;
 }
-.amen{
-  display: flex; 
-  width: fit fit-content;
- margin-left: 50px;
- margin-top: 20px;
- justify-content: center;
-  
- 
-  
-  
+.amen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    max-width: 1200px;
+    margin: 0 auto;}
+.bastard{
+    width: 1300px;
 } 
 .suberu{
     width: 100%;
@@ -508,7 +507,19 @@ margin-top: 23px;
     display: block;
 }
 .damn{
-    width: 20vw;
+    width: 1000px;
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67fd3b6d48813d28793babef_Hero%20img%20personal.webp);
+    background-size: cover;
+    background-position: center left -20px;
+    height: 700px;
+}  
+.amen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .mren{
@@ -814,9 +825,7 @@ padding: 20px 15px;
     width: 100%;
     max-width: 100%;
 }
-.bastard{
-    width: 1300px;
-}
+
 .amage{
     justify-self: center;
     display: flex;
@@ -1393,6 +1402,7 @@ font-size: 18px;
   padding-right: 20px;
   height: fit-content;
   padding-top: 50px;
+  
 }
 .awer{
     width: 100%;
