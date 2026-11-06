@@ -84,6 +84,53 @@ width: 20px;
     gap: 75px;
     margin: 0 50px 0 0px;
 }
+.trust{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    gap: 20px;
+    scrollbar-width: none;
+    width: 100%;
+    height: 100vh;
+    margin-top: 40px;
+}
+.whyyke{
+    width: 60%;
+    height: 70vh;
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/6809058ad8a04756d5810503_who%20we%20serve%2001.webp);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     flex-shrink: 0;
+}
+.second{
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905a67134492a493ee0a6_who%20we%20serve%2002.webp);
+}
+.third{
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905bbd5bf2c9bf42b6312_who%20we%20serve%2003.webp);
+}
+.fourth{
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905c8bfa031d79706c6eb_who%20we%20serve%2004.webp);
+}
+.leave{
+    font-size: 25px;
+    font-weight: 600;
+    color: white; 
+}
+.daggot{
+    width: 27vw;
+}
+.cod{
+   font-size: 18px;
+    font-weight: 600;
+    color: white;  
+}
 .why{
     width: 30px;
     margin: -2px;
@@ -162,6 +209,69 @@ font-size: 13px;
    padding: 10px 10px 40px 10px;
    display: none;
    border-top: 1px solid #dadadac4;
+}
+.line{
+    
+    width: 100%;
+    height: 0.5px;
+    background-color: #b9b9ffd3;
+}
+.fork{
+    width: 20px;
+}
+
+.whez{
+    background-color: #191341;
+}
+.oper{
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+}
+.ropl{
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(129, 128, 128);
+}
+
+.arrange{
+    display: flex;
+    flex-direction: column;
+    
+}
+.details{
+    width: 100%;
+    padding-top: 20px;
+    background-color: #F7F7FF;
+}
+.tnr{
+    width: 40px;
+}
+.style{
+display: flex;
+gap: 10px;
+}
+
+.anchor{
+    text-decoration: none;
+}
+
+.spn1{
+color: #000000;
+font-family: sans-serif;
+font-size: 14px;
+}
+
+.imadiv{
+    background-color: #ebebf7;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 .produc{
     cursor: pointer;
@@ -282,62 +392,7 @@ transform: rotate(0deg);
     grid-template-columns: 1fr;
     
 }
-.line{
-    
-    width: 100%;
-    height: 0.5px;
-    background-color: #b9b9ffd3;
-}
-.fork{
-    width: 20px;
-}
 
-.whez{
-    background-color: #191341;
-}
-.oper{
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 600;
-}
-.ropl{
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 600;
-    color: rgb(129, 128, 128);
-}
-
-.arrange{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.style{
-display: flex;
-gap: 10px;
-}
-
-.anchor{
-    text-decoration: none;
-}
-
-.spn1{
-color: #000000;
-font-family: sans-serif;
-font-size: 14px;
-}
-
-.imadiv{
-    background-color: #ebebf7;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin-right: 10px;
-}
 
 .btn-solid{
     background: none;
@@ -367,7 +422,10 @@ margin-top: 23px;
     height: 2px;
 }
 
-
+.surrander{
+    width: 100%;
+    height: 15vh;
+}
 
 
 .blue{
@@ -424,7 +482,8 @@ margin-top: 23px;
 .aar{
     position: relative;
     cursor: pointer;
-    width: fit-content;
+    width: 50px;
+
     height: 80px;
     align-items: center;
     display: flex;
@@ -609,8 +668,8 @@ font-family: sans-serif;
     display: flex;
     align-items: center;
     padding-top: 80px;
-    
-    
+    flex-wrap: wrap;
+    height: 580px;
     gap: 20px;
    
 
@@ -621,8 +680,8 @@ font-family: sans-serif;
 }
 .spaced{
 width: 100%;
-height: 40vh;
-background-color: lightblue;
+max-height: 100%;
+background-color: #F8F8F8;
 border-radius: 20px;
 padding: 20px 15px;
 }
@@ -630,7 +689,53 @@ padding: 20px 15px;
     font-size: 13px;
 }
 .kevin{
+    display: block;
     font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    top: 0%;
+    bottom: auto;
+}
+.bayoro{
+    align-self: self-start;
+}
+.posi{
+    
+    width: 26vw;
+    height: 100%;
+   
+    border-radius: 20px;
+    display: flex;
+    
+    padding: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+.wella{
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680c851c995fd04d3c69dbd0_Geegpay%20testimonal.jpg);
+    background-repeat: no-repeat;
+    background-size: 760px;
+     background-position: center right -150px;
+     align-items: start;
+     justify-content: end;
+    width: 24vw;
+    height: 91%;
+    background-color: red;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.verly{
+     background-color: rgba(0, 0, 0, 0.719); 
+  
+  
+  backdrop-filter: blur(8px); 
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .imazing{
     display: flex;
@@ -645,12 +750,14 @@ padding: 20px 15px;
 .rap{
     width: 28vw;
     height: 100%;
-    background-color: red;
+    
     border-radius: 20px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    
     flex-direction: column;
 }
+
 .fols{
     font-size: 40px;
     font-weight: 700;
@@ -694,7 +801,472 @@ padding: 20px 15px;
 .bastard{
     width: 1300px;
 }
+.amage{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 321px;
+    background-color: #24201E;
+    border-radius: 10px;
+    height: 40px;
+    gap: 5px;
 
+}
+.fms{
+    font-weight: 600;
+    color: #d9d9d9bd;
+
+}
+.qwerty{
+    width: 100px;
+}
+.arewa{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/6970bf1187dee404aee42a83_Raenest_India_2-p-500.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hasj{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 80px;
+    left: 60px;
+    bottom: auto;
+    font-weight: 600;
+}
+.mofo div {
+    width: 100vw;
+    height: 100vh;
+    justify-self: center;
+    position: sticky;
+}
+
+.mofo {
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin-top: 50px;
+}
+.chicken {
+  background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/6970bf1187dee404aee42a83_Raenest_India_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    position: relative;
+}
+.chicken2 {
+  background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67da657539515e002e5ccd03_global%20acc%20slider2%20img.png);
+   background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+    top: 0px;
+    z-index: 2;
+    width: 100vw;
+}
+.child3 {
+   background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/69d79ee49c0d8b67d4ad1a64_newvisacard-p-1080.jpg);
+     background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+    top: 0px;
+    z-index: 3;
+    width: 100vw;
+}
+.child4 {
+   background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/69735a6bd934d9d0ad410999_Raenest_55-p-1080.png);
+     background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+    top: 0px;
+    z-index: 4;
+    width: 100vw;
+}
+.child5 {
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/6973511d15f05ffbebd9d4f1_Raenest_Philipines%201-p-800.png);
+     background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+    top: 0px;
+    z-index: 5;
+    width: 100vw;
+}
+.ases{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    padding-top: 87px;
+    padding-left: 55px;
+}
+.cobalise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bloot{
+    padding-top: 187px;
+padding-left: 800px;
+}
+.flo-div1{
+    padding-left: 260px;
+    padding-top: 100px;
+}
+.flo-div2{
+    padding-left: 80px;
+    padding-top: 100px;
+}
+.flo-div3{
+    padding-left: 900px;
+    padding-top: 270px;
+}
+.flo-div4{
+    padding-left: 900px;
+    padding-top: 270px;
+}
+.oneim{
+    position: absolute;
+    top: 307px;
+    left: 240px;
+}
+.twoim{
+      position: absolute;
+    right: 260px;
+backdrop-filter: blur(10px);
+}
+.threeim{
+       position: absolute;
+    left: 450px;
+    top: 100px;
+backdrop-filter: blur(10px);
+z-index: 3;
+width: 300px;
+}
+.fourim{
+        position: absolute;
+    left: 30px;
+    top: 300px;
+}
+.case{
+    font-size: 40px;
+    color: white;
+}
+.sav{
+    font-size: 15x;
+    color: white;
+}
+.persy{
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 480px){
+.chicken {
+  background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e3bce57353bf2a8812_Receive%20money.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    top: 0;
+    z-index: 1;
+    width: 100vw}
+    .ases{
+        font-size: 4dvw;
+         padding-top: 137px;
+    }
+    .flo-div{
+    padding-top: 37px;
+padding-left: 50px;
+}
+.case{
+    font-size: 6dvw;
+    color: white;
+}
+.sav{
+    font-size: 3dvw;
+    color: white;
+}
+.oneim{
+    position: absolute;
+    top: 597px;
+    left: 200px;
+    width: 40dvw;
+}
+
+.chicken2 {
+  background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e30e084ea64adfe67e_Global%20accounts.webp);
+   background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+    top: 0px;
+    z-index: 2;
+    width: 100vw;
+}
+.flo-div1{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.twoim{
+      position: absolute;
+      top: 500px;
+    right: 200px;
+backdrop-filter: blur(10px);
+width: 35vw;
+}
+.child3 {
+   background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e3539ddb3a83e861a0_Cards%20for%20every%20occasson.webp);
+     background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+    top: 0px;
+    z-index: 3;
+    width: 100vw;
+}
+.flo-div2{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.threeim{
+       position: absolute;
+    left: 50px;
+    top: 500px;
+backdrop-filter: blur(10px);
+z-index: 3;
+width: 40vw;
+}
+
+
+.child4 {
+   background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e3a250148ddf386ba4_fast%20transfers.webp);
+     background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+    top: 0px;
+    z-index: 4;
+    width: 100vw;
+}
+.flo-div3{
+    padding-left: 40px;
+    padding-top: 390px;
+}
+.fourim{
+        position: absolute;
+    left: 30px;
+    top: 300px;
+    width: 50vw;
+}
+.child5 {
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e4bce57353bf2a88b4_earn.webp);
+     background-repeat: no-repeat;
+  background-size: cover;
+   background-position: center;
+    top: 0px;
+    z-index: 5;
+    width: 100vw;
+}.flo-div4{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+}
+@media (min-width: 481px) and (max-width: 1024px){
+       .p-c{
+        font-size: 4dvw;
+         padding-top: 137px;
+    }
+    .flo-div{
+    padding-top: 37px;
+padding-left: 50px;
+}
+.oneim{
+    position: absolute;
+    top: 647px;
+    left: 150px;
+    width: 40dvw;
+}
+.flo-div1{
+    padding-left: 50px;
+    padding-top: 7px;
+}
+.twoim{
+      position: absolute;
+    right: 210px;
+    top: 700px;
+backdrop-filter: blur(10px);
+width: 19vw;
+}
+.flo-div2{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.threeim{
+       position: absolute;
+    left: 50px;
+    top: 500px;
+backdrop-filter: blur(10px);
+z-index: 3;
+width: 40vw;
+}
+.flo-div3{
+    padding-left: 40px;
+    padding-top: 470px;
+    width: 25vw;
+}
+.fourim{
+        position: absolute;
+    left: 130px;
+    top: 300px;
+    width: 50vw;
+}
+.flo-div4{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+}
+.satinger{
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+}
+.rear{
+    font-size: 3vw;
+    font-weight: 700;
+}
+.cocane{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.fiwas{
+   font-size: 16px;
+    font-weight: 600;
+    color: black; 
+}
+.mention{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.fuck{
+    width: 90%;
+    height: 80vh;
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67e452702a7e4919a57c2a10_Raenest%20for%20business%20cta%20bg.svg);
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.worder{
+     font-size: 50px;
+    font-weight: 700;
+    word-spacing: -5px;
+    letter-spacing: -1px;
+    color: white;
+}
+.respo{
+    width: 75vh;
+    text-align: center;
+
+}
+.amene{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17%;
+    background-color: white;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.cole{
+    color: white;
+    text-align: center;
+    
+}
+.ai{
+    font-size: 15px;
+    font-weight: 700;
+
+}
+.costa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    justify-content: space-between;
+    justify-self: center;
+}
+.moskito{
+    width: fit-content;
+    padding: 5px 8px;
+    background-color: white;
+    border-radius: 20px;
+}
+.batok{
+    background-color: #000000;
+}
+.begin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    width: 645px;
+    border: 1px solid #c0bebe;
+    height: 50px;
+    background-color: #EBEBEB;
+    padding: 2px 5px;
+    border-radius: 25px;
+}
+.whykke{
+    width: 50% ;
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/6809058ad8a04756d5810503_who%20we%20serve%2001.webp);
+}
+.agot{
+    width: 40vw;
+}
+.bg{
+         font-size: 50px;
+    font-weight: 700;
+    word-spacing: -5px;
+    letter-spacing: -1px;
+    color: black;
+}
+.cascade{
+    display: flex;
+    
+    overflow-x: hidden;
+    width: 85%;
+    margin: auto;
+    
+}
+.html{
+    width: 34vw;
+    margin-left: -80px;
+}
+.maintenance{
+    width: 80vw;
+}
+.wela{
+     font-size: 18px;
+    font-weight: 500;
+
+    color: black;
+}
 @media (max-width: 576px) {
     .john-wick{
         display: none;
