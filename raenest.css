@@ -21,12 +21,12 @@ body{
 .collect{
     display: flex;
     align-items: center;
-    gap: 80px;
-    width: 95%;    
+    gap: 95px;
+    width: 100%;    
     justify-content: center;
     z-index: 10;
     background-color: white;
-    padding: 0 px 0;
+    padding: 0px;
  } 
  .qr-code{
     width: 160px;
@@ -48,7 +48,7 @@ flex-direction: column;
 gap: 10px;
  }
 .firstima{
-width: 120px;
+width: 115px;
 margin-left: 20px;
 display: flex;
 align-items: center;
@@ -72,8 +72,8 @@ width: 20px;
 }
 
 .nav-pills{
-    padding: 0.35rem;
-    gap: 20px;
+    
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,12 +90,12 @@ width: 20px;
 .nav-pills .nav-link.active {
   background-color: #000000 ;
   color: #ffffff;
-  padding: 6px;
+  padding: 6px 10px;
 }
 .john-wick{
     display: flex;
     align-items: center;
-    gap: 75px;
+    gap: 70px;
     margin: 0 50px 0 0px;
 }
 .trust{
@@ -331,7 +331,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 width: 140px;
-height: 35px;
+height: 38px;
 border-radius: 10px;
 color: white;
 font-family: sans-serif;
@@ -466,15 +466,9 @@ margin-top: 23px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 60px 0 40px 0;
+    padding: 90px 0 40px 0;
 }
-.amen {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    max-width: 1200px;
-    margin: 0 auto;}
+
 .bastard{
     width: 1300px;
 } 
@@ -489,6 +483,7 @@ margin-top: 23px;
     overflow: hidden;
     scrollbar-width: none;
     gap: 10px;
+    border-radius: 30px;
 }
 .carry{
     animation: moving 17s linear infinite;
@@ -498,7 +493,7 @@ margin-top: 23px;
     position: relative;
     cursor: pointer;
     width: 50px;
-
+    justify-content: center;
     height: 80px;
     align-items: center;
     display: flex;
@@ -507,19 +502,27 @@ margin-top: 23px;
     display: block;
 }
 .damn{
-    width: 1000px;
+    width: 500px;
     background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67fd3b6d48813d28793babef_Hero%20img%20personal.webp);
-    background-size: cover;
-    background-position: center left -20px;
-    height: 700px;
+    background-size: 900px;
+    background-position: center left -340px;
+    height: 750px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 30px;
+    left: -10px;
+    bottom: auto;
+    z-index: 40;
 }  
+
 .amen {
     display: flex;
-    align-items: center;
+    
     justify-content: center;
-    width: fit-content;
-    max-width: 1200px;
+    width: 100%;
+    padding-left: 60px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 .mren{
@@ -532,21 +535,15 @@ a{
     text-decoration: none;
     color: black;
 }
-.menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-    width: 40px;
+.menu{
+    width: fit-content;
     height: 40px;
-    cursor: pointer;
 }
 
 
 .menu-line {
-    width: 23px;
-    height: 2px;
+    width: 20px;
+    height: 20px;
     background-color: #4f3fd7;
     border-radius: 5px;
 }
@@ -612,7 +609,7 @@ font-family: sans-serif;
     width: 1000px;
     position: relative;
     top: -3%;
-    left: -270px;
+    left: -570px;
     bottom: auto;
     z-index: 300;
     
@@ -634,7 +631,8 @@ font-family: sans-serif;
 
 .recieve{
     margin-top: 20px;
-    font-size: 85px;
+    font-size: 80px;
+    word-spacing: -4px;
 }
 .create{
     width: 160px;
@@ -660,6 +658,7 @@ font-family: sans-serif;
     width: 80%;
     justify-self: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .nine.blop{
    width: 100px; 
@@ -1025,7 +1024,16 @@ padding-left: 50px;
     left: 200px;
     width: 40dvw;
 }
-
+.image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-self: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
 .chicken2 {
   background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680f48e30e084ea64adfe67e_Global%20accounts.webp);
    background-repeat: no-repeat;
@@ -1236,6 +1244,7 @@ width: 40vw;
     width: 90%;
     justify-content: space-between;
     justify-self: center;
+    overflow-x: scroll;
 }
 .moskito{
     width: fit-content;
@@ -1285,7 +1294,7 @@ width: 40vw;
     margin-left: -80px;
 }
 .maintenance{
-    width: 80vw;
+    width: 60vw;
 }
 .wela{
      font-size: 18px;
@@ -1351,7 +1360,7 @@ font-size: 18px;
     bottom: auto;
     z-index: 24;
 }
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .john-wick{
         display: none;
     }
@@ -1392,7 +1401,7 @@ font-size: 18px;
 }
 .recieve{
     margin: 0px;
-    font-size: 10vw;
+    font-size: 9vw;
 }
 .amen{
   display: flex;  
@@ -1409,7 +1418,152 @@ font-size: 18px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0px 0 40px 0;
+    padding: 400px 0 40px 0;
+}
+.frepe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+.firstima{
+width: 80px;
+margin-left: 0px;
+display: flex;
+align-items: center;
+}
+.suberu{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    
+}
+.oliver{
+    display: flex;
+    overflow: hidden;
+    scrollbar-width: none;
+    gap: 10px;
+}
+.carry{
+    animation: moving 17s linear infinite;
+
+}
+.bolaji{
+font-family: sans-serif;
+   color: white;
+   margin-bottom: 0;
+  overflow-wrap: break-word;
+   width: 87vw;
+}
+.lamino{
+    width: 100px;
+    position: relative;
+    left: -280px;
+    bottom: 0px;
+
+}
+.bastard{
+    width: 850px;
+}
+ nav{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    padding: 0 px 0;
+}
+    .getting{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+.qr-code{
+    display: none;
+}
+.yoruba{
+    width: 80vw;
+    color: white;
+    overflow-wrap: break-word;
+
+
+}
+.cover-baki{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.baki{
+    font-family: sans-serif;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+    .john-wick{
+        display: none;
+    }
+    .jordan{
+        display: none;
+    }
+    .idibo{
+        display: none;
+    }
+     .collect{
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    overflow-x: hidden;    
+   
+    z-index: 10;
+    background-color: white;
+    padding: 0 0 0 20px;
+ }
+  
+.blue{
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/681149da8df0d9921c04e3fc_hero%20bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #4f3fd7;
+    height: 90vh;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-position: left bottom 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+   
+}
+.recieve{
+    margin: 0px;
+    font-size: 8vw;
+}
+.amen{
+  display: flex;  
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: fit-content;
+  padding-top: 50px;
+}
+.awer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 600px 0 40px 0;
 }
 .frepe{
     display: flex;
@@ -1468,7 +1622,7 @@ font-family: sans-serif;
     padding: 0 px 0;
  }
     .getting{
-    font-size: 4vw;
+    font-size: 15px;
     font-weight: 400;
     margin: 0;
 }
@@ -1476,141 +1630,24 @@ font-family: sans-serif;
     display: none;
 }
 .yoruba{
-    width: 80vw;
+    width: 42vw;
     color: white;
     overflow-wrap: break-word;
 
 
 }
-}
-@media (max-width: 577px) and (max-width: 1024px) {
-    .john-wick{
-        display: none;
-    }
-    .jordan{
-        display: none;
-    }
-    .idibo{
-        display: none;
-    }
-     .collect{
-    display: flex;
-    align-items: center;
-    
-    width: 100%;
-    overflow-x: hidden;    
-   
-    z-index: 10;
-    background-color: white;
-    padding: 0 0 0 20px;
- }
-  
-.blue{
-    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/681149da8df0d9921c04e3fc_hero%20bg.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #4f3fd7;
-    height: 90vh;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    background-position: left bottom 80px;
+.cover-baki{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
-    overflow-x: hidden;
-   
 }
-.recieve{
-    margin: 0px;
-    font-size: 10vw;
-}
-.amen{
-  display: flex;  
-  flex-direction: column;
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: fit-content;
-  padding-top: 50px;
-}
-.awer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0px 0 40px 0;
-}
-.frepe{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-}
-.firstima{
-width: 80px;
-margin-left: 0px;
-display: flex;
-align-items: center;
-}
-.suberu{
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    
-}
-.oliver{
-    display: flex;
-    overflow: hidden;
-    scrollbar-width: none;
-    gap: 10px;
-}
-.carry{
-    animation: moving 17s linear infinite;
 
-}
-.bolaji{
-font-family: sans-serif;
-   color: white;
-   margin-bottom: 0;
-  overflow-wrap: break-word;
-   width: 87vw;
-}
-.lamino{
-    width: 100px;
-    position: relative;
-    left: -280px;
-    bottom: 0px;
-
-}
-.bastard{
-    width: 850px;
-}
- nav{
-    display: flex;
-    height: 70px;
-    justify-content: center;
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: white;
-    padding: 0 px 0;
- }
-    .getting{
-    font-size: 4vw;
-    font-weight: 400;
-    margin: 0;
-}
-.qr-code{
-    display: none;
-}
-.yoruba{
-    width: 80vw;
-    color: white;
-    overflow-wrap: break-word;
-
-
+.baki{
+    font-family: sans-serif;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
 }
 }
