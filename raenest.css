@@ -590,9 +590,7 @@ margin-top: 23px;
     top: 100;
     left: -200px;
     bottom: -570px;
-    opacity: 5;
-    filter: 
-    blur(0.3px);
+    
 }
 .amen {
     display: flex;
