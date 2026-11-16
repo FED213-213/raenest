@@ -1218,6 +1218,24 @@ width: 40vw;
     justify-content: space-between;
      flex-shrink: 0;
 }
+
+.amage{
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    background-color: #24201E;
+    border-radius: 10px;
+    height: 40px;
+    gap: 5px;
+
+}
+.fms{
+    font-weight: 600;
+    color: #d9d9d9bd;
+
+}
 }
 @media (min-width: 481px) and (max-width: 1024px){
        .p-c{
@@ -1806,7 +1824,14 @@ animation: hyena 2s ease-in-out infinite;
     color: white;
     font-size: 13px;
     font-weight: 500;
+    
+}
+.fuckthat{
+     color: white;
+    font-size: 13px;
+    font-weight: 500;
     display: flex;
+    flex-wrap: wrap;
 }
 .yell{
     width: 90px;
@@ -1890,9 +1915,7 @@ animation: hyena 2s ease-in-out infinite;
 }
 
 
-.conta{
-    padding-top: 70px;
-}
+
 
 
 .contain-blue{
@@ -2002,10 +2025,6 @@ animation: hyena 2s ease-in-out infinite;
   padding: 74px 24px;
 }
 
-.contra {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .sike{
   text-align: center;
@@ -2022,7 +2041,9 @@ animation: hyena 2s ease-in-out infinite;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
+.conta{
+    padding-top: 70px;
+}
 .card {
   display: flex;
   flex-direction: column;
@@ -2590,6 +2611,19 @@ font-family: sans-serif;
     border-radius: 10px;
     margin-top: 30px;
 }
+.contain-blue{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: fit-content;
+    align-self: center;
+    justify-self: center;
+    padding-top: 70px;
+   
+   
+}
 .cole{
     color: white;
     text-align: center;
@@ -2633,6 +2667,208 @@ font-family: sans-serif;
 .html{
     width: fit-content;
     
+}
+
+.bliey-blue{
+    width: 100%;
+    max-width: 100%;
+    background-color: #4F3FD7;
+    height: 800px;
+    max-height: 600px;
+    border-radius: 1rem;
+    box-sizing: border-box;    
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.lue-lue{
+    justify-content: center;
+    width: 100%;
+    background-color: #4F3FD7;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.lue-lue-tife{
+    justify-content: center;
+    width: 100%;
+    background-color: #4F3FD7;
+    height: 65%;
+    display: flex;
+    align-items: end;
+    position: relative;
+    overflow-x: hidden;
+}
+.cube{
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(70,38,134);
+    position: absolute;
+    /* top: -70%;
+    right: -100%; */
+    top: 0%;
+    left: 89%;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.malawi{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+.luee{
+    align-items: center;
+    width: 100%;
+    background-color: #24159D;
+    height: 35%;
+   align-self: self-start;
+   padding: 1.2rem;
+   
+}
+.lopit{
+    margin-bottom: 5px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 22px;
+}
+.mova{
+    padding-top: 40px;
+}
+.saman{
+    margin: 0;
+  
+    color: white;
+    font-weight: 499;
+    font-size: 18px;
+}
+.lees{
+    display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+
+
+
+
+
+.gnak{
+  padding: 74px 24px;
+}
+
+
+.sike{
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #18181b;
+  margin-bottom: 40px;
+  letter-spacing: -0.02em;
+}
+
+
+.giden{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.conta{
+    padding-top: 70px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #f1f1f4;
+  border-radius: 20px;
+  padding: 12px;
+  background: #ffffff;
+  
+  width: fit-content;
+}
+
+
+
+
+.terro{
+    width: 100%;
+  height: 250px;
+  border-radius: 14px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+
+.tern{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4F3FD7;
+    padding: 1rem;
+}
+.bear{
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/6af464f9d1ded35fe975e439_October%202026%20Monthly%20Header-p-1080.jpg);
+    background-size: cover;
+    border-bottom-right-radius: 2.3vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.panda{
+     background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/6af4878c92242cde3dbfa8e8_How%20to%20Fund%20Your%20Raenest%20Account%20With%20Bitcoin%20Ethereum%20or%20Solana.jpg);
+    background-size: cover;
+    border-bottom-right-radius: 2.3vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bauire{
+     background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/6af30f70dbf05d4cc2eb8ba7_Remitise%20Acquisition%20-%20Blog.jpg);
+    background-size: cover;
+    border-bottom-right-radius: 2.3vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+.sapphire{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 6px 8px;
+  
+}
+
+
+.puchi{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 40px;
+    row-gap: 50px;
+    width: 90vw;
+    justify-self: center;
 }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -2822,6 +3058,105 @@ nav{
 .html{
     width: fit-content;
     
+}
+
+
+.bliey-blue{
+    width: 100%;
+    max-width: 100%;
+    background-color: #4F3FD7;
+    height: 800px;
+    max-height: 600px;
+    border-radius: 1rem;
+    box-sizing: border-box;    
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.lue-lue{
+    justify-content: center;
+    width: 100%;
+    background-color: #4F3FD7;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.lue-lue-tife{
+    justify-content: center;
+    width: 100%;
+    background-color: #4F3FD7;
+    height: 65%;
+    display: flex;
+    align-items: end;
+    position: relative;
+    overflow-x: hidden;
+}
+.cube{
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(70,38,134);
+    position: absolute;
+    /* top: -70%;
+    right: -100%; */
+    top: 0%;
+    left: 89%;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.malawi{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin: 0;
+}
+.luee{
+    align-items: center;
+    width: 100%;
+    background-color: #24159D;
+    height: 35%;
+   align-self: self-start;
+   padding: 1.2rem;
+   
+}
+.lopit{
+    margin-bottom: 5px;
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 22px;
+}
+.mova{
+    padding-top: 40px;
+}
+.saman{
+    margin: 0;
+  
+    color: white;
+    font-weight: 499;
+    font-size: 18px;
+}
+.lees{
+    display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.puchi{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 40px;
+    row-gap: 50px;
+    width: 90vw;
+    justify-self: center;
 }
 }
 .faqyu{
