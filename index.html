@@ -575,7 +575,7 @@ Create an account
             <p>
                Get paid on time, every time, with accounts in USD, GBP, or EUR, plus easy invoicing and payment links.
             </p>
-            <a href="#">Learn more <span class="arrow-right">→</a>
+            <a href="">Learn more <span class="arrow-right">→</a>
         </div>
     </div>
 
@@ -587,7 +587,7 @@ Create an account
             <p>
                Open USD, GBP, EUR, USDT, and USDC accounts in minutes, and manage the money you receive, spend, and save in one place.
             </p>
-            <a href="#">Learn more →</a>
+            <a href="">Learn more →</a>
         </div>
     </div>
 
@@ -599,7 +599,7 @@ Create an account
             <p>
                 Choose virtual or physical cards for shopping, travel, and everyday spending, with clear pricing and acceptance wherever Visa is supported.
             </p>
-            <a href="#">Learn more →</a>
+            <a href="">Learn more →</a>
         </div>
     </div>
 
@@ -631,21 +631,22 @@ Create an account
 </section>
  
 
-<section class="satinger">
-   <section class="rae">
-    <h2 class="e">Raenest for everyone</h2>
-    
-    <div class="seven" role="tablist">
-      <button class="pill-btn active" role="tab" aria-selected="true">Freelancers & Creators</button>
-      <button class="pill-btn" role="tab" aria-selected="false">Travelers</button>
-      <button class="pill-btn" role="tab" aria-selected="false">Online Shoppers</button>
-      <button class="pill-btn" role="tab" aria-selected="false">Students</button>
-      <button class="pill-btn" role="tab" aria-selected="false">Social Sellers</button>
-    </div>
-  </section>
+<section class="alova">
+   <section class="satinger">
+
+<section class="rae">
+ <h2 class="e">Raenest for everyone</h2>
+<div class="seven" role="tablist">
+  <button class="pill-btn active" data-index="0" role="tab" aria-selected="false">Freelancers & Creators</button>
+  <button class="pill-btn" data-index="1" role="tab" aria-selected="true">Travelers</button>
+  <button class="pill-btn" data-index="2" role="tab" aria-selected="false">Online Shoppers</button>
+  <button class="pill-btn" data-index="3" role="tab" aria-selected="false">Students</button>
+  <button class="pill-btn" data-index="4" role="tab" aria-selected="false">Social Sellers</button>
+</div>
+</section>
 
 <div class="trust">
-   <div class="whyyke">
+  <div class="whyyke" data-index="0">
       <p class="leave">
          Freelancers & Creators</p>
          <div class="daggot">
@@ -656,52 +657,54 @@ Create an account
    </div>
 
 
-   <div class="whyyke">
+  <div class="whyyke second" data-index="1">
       <p class="leave">
-         Freelancers & Creators</p>
+        Travelers</p>
          <div class="daggot">
             <p class="cod">
-            Create global accounts and receive international payments easily from Freelance Marketplaces & Global Clients.
+           Use your card at Visa merchants worldwide while you travel.
          </p>
          </div>
    </div>
 
 
-   <div class="whyyke  second">
+   <div class="whyyke third" data-index="2">
       <p class="leave">
-         Freelancers & Creators</p>
+         Online Shoppers</p>
          <div class="daggot">
             <p class="cod">
-            Create global accounts and receive international payments easily from Freelance Marketplaces & Global Clients.
+            Use virtual dollar cards for international shopping.
          </p>
          </div>
    </div>
 
 
-   <div class="whyyke third">
+   <div class="whyyke fourth" data-index="3">
       <p class="leave">
-         Freelancers & Creators</p>
+         Students</p>
          <div class="daggot">
             <p class="cod">
-            Create global accounts and receive international payments easily from Freelance Marketplaces & Global Clients.
+            Easily pay for courses, subscriptions, and study materials via our USD card.
          </p>
          </div>
    </div>
 
-
-
-   <div class="whyyke fourth">
+    <div class="whyyke fifth" data-index="4">
       <p class="leave">
-         Freelancers & Creators</p>
+         Social Sellers</p>
          <div class="daggot">
             <p class="cod">
-            Create global accounts and receive international payments easily from Freelance Marketplaces & Global Clients.
+           Accept payments from customers worldwide through payment links.
+
          </p>
          </div>
    </div>
 
 </div>
 </section>
+</section>
+
+
 <section class="mention">
    <div class="fuck">
      <div class="zainab">
@@ -1090,6 +1093,53 @@ Raenest is not a broker-dealer, investment adviser or member of FINRA. Securitie
 </section>
 
 
+<script>
 
+const buttons = document.querySelectorAll(".pill-btn");
+const cards = document.querySelectorAll(".whyyke");
+const container = document.querySelector(".trust");
+
+let currentIndex = 1;
+
+
+function showCard(index) {
+
+    currentIndex = index;
+
+    buttons.forEach((button, i) => {
+        button.classList.toggle("active", i === index);
+
+        button.setAttribute(
+            "aria-selected",
+            i === index ? "true" : "false"
+        );
+    });
+
+    const card = cards[index];
+
+    container.scrollTo({
+        left: card.offsetLeft -
+              (container.clientWidth - card.clientWidth) / 2,
+        behavior: "smooth"
+    });
+}
+
+function nextCard() {
+    currentIndex = (currentIndex + 1) % cards.length;
+    showCard(currentIndex);
+}
+
+
+
+buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        showCard(index);
+       
+    });
+});
+
+showCard(1);
+
+</script>
 </body>
 </html>

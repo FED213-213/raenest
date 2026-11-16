@@ -3,7 +3,7 @@ body{
     padding: 0;
    
     box-sizing: border-box;
-
+    overflow-x: hidden;
     width: 100%;
     max-width: 100%;
  }
@@ -28,7 +28,7 @@ body{
     background-color: white;
     padding: 0px;
  } 
- @media (min-width: 1028px) and (max-width: 1229px)
+ @media (min-width: 1024px) and (max-width: 1229px)
  {
     .collect{
         gap: 0px;
@@ -151,61 +151,7 @@ width: 20px;
     gap: clamp(20px, 4.5vw, 70px);
     margin: 0 50px 0 0px;
 }
-.trust{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-y: scroll;
-    gap: 20px;
-    scrollbar-width: none;
-    width: 100%;
-    
-    margin-top: 40px;
-}
-.whyyke{
-    width: 900px;
-    height: 500px;
-    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/6809058ad8a04756d5810503_who%20we%20serve%2001.webp);
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 30px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-     flex-shrink: 0;
-}
-.second{
-    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905a67134492a493ee0a6_who%20we%20serve%2002.webp);
-}
-.third{
-    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905bbd5bf2c9bf42b6312_who%20we%20serve%2003.webp);
-}
-.fourth{
-    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905c8bfa031d79706c6eb_who%20we%20serve%2004.webp);
-}
-.leave{
-    font-size: 25px;
-    font-weight: 600;
-    color: white; 
-}
-.daggot{
-    width: 27vw;
-}
-.cod{
-   font-size: 18px;
-    font-weight: 600;
-    color: white;  
-}
-.why{
-    width: 30px;
-    margin: -2px;
-    position: relative;
-    top: 2px;
-    transform:rotate( -90deg);
-    transition: transform 0.1s ease-in-out;
-}
+
 
 .frepe{
     display: flex;
@@ -1329,77 +1275,15 @@ width: 40vw;
 
 }
 
-.satinger{
+.alova{
     width: 100%;
-    height: 100vh;
-    padding-top: 80px;
+    min-height: 100vh;
+
 }
-.rear{
-    font-size: 3vw;
-    font-weight: 700;
-}
-.cocane{
-    font-size: clamp(11px, 2vw, 5px);
-    font-weight: 600;
-    color: white;
-}
-.fiwas{
-    font-size: clamp(11px, 2vw, 18px);
-    font-weight: 600;
-    color: black; 
-}
-.mention{
+.satinger {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-
-}
-.fuck{
-    width: 90%;
-    height: 80vh;
-    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67e452702a7e4919a57c2a10_Raenest%20for%20business%20cta%20bg.svg);
-    border-radius: 40px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.worder{
-     font-size: 3vw;
-    font-weight: 700;
-    word-spacing: -5px;
-    letter-spacing: -1px;
-    color: white;
-}
-.respo{
-    width: 75vh;
-    text-align: center;
-
-}
-.amene{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 190px;
-    background-color: white;
-    height: 50px;
-    border-radius: 10px;
-    margin-top: 30px;
-}
-.cole{
-    color: white;
-    text-align: center;
-    font-size: 1.2vw;
-}
-.ai{
-    font-size: 15px;
-    font-weight: 700;
-
+    min-height: 100vh;
+    padding: 80px 0 40px;
 }
 .rae{
   display: flex;
@@ -1447,13 +1331,152 @@ width: 40vw;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-
-
-
 .pill-btn.active {
   background-color: #0b0719;
   color: #ffffff;
 }
+
+.trust {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    gap: 20px;
+    scrollbar-width: none;
+    width: 100%;
+    margin-top: 40px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 0 5%;
+}
+
+.trust::-webkit-scrollbar {
+    display: none;
+}
+
+.whyyke {
+    width: min(900px, 85vw);
+    height: 500px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/6809058ad8a04756d5810503_who%20we%20serve%2001-p-1080.webp);
+}
+
+.second{
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905a67134492a493ee0a6_who%20we%20serve%2002.webp);
+}
+.third{
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905bbd5bf2c9bf42b6312_who%20we%20serve%2003.webp);
+}
+.fourth{
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905c8bfa031d79706c6eb_who%20we%20serve%2004.webp);
+}
+
+.fifth{
+    background-image: url(https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680905d64594fe06327c1381_who%20we%20serve%2005-p-500.webp);
+}
+
+.leave{
+    font-size: 25px;
+    font-weight: 600;
+    color: white; 
+}
+.daggot{
+    width: 27vw;
+}
+.cod{
+   font-size: 18px;
+    font-weight: 600;
+    color: white;  
+}
+.why{
+    width: 30px;
+    margin: -2px;
+    position: relative;
+    top: 2px;
+    transform:rotate( -90deg);
+    transition: transform 0.1s ease-in-out;
+}
+
+
+.rear{
+    font-size: 3vw;
+    font-weight: 700;
+}
+.cocane{
+    font-size: clamp(11px, 2vw, 5px);
+    font-weight: 600;
+    color: white;
+}
+.fiwas{
+    font-size: clamp(11px, 2vw, 18px);
+    font-weight: 600;
+    color: black; 
+}
+.mention{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.fuck{
+    width: 90%;
+    height: 80vh;
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67e452702a7e4919a57c2a10_Raenest%20for%20business%20cta%20bg.svg);
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.worder{
+     font-size: 3vw;
+    font-weight: 700;
+    word-spacing: -5px;
+    letter-spacing: -1px;
+    color: white;
+}
+.respo{
+    width: 75vh;
+    text-align: center;
+
+}
+.amene{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    background-color: white;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.cole{
+    color: white;
+    text-align: center;
+    font-size: 1.2vw;
+}
+.ai{
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
 .costa{
     display: flex;
     align-items: center;
@@ -1519,9 +1542,7 @@ width: 40vw;
     padding-top: 200px;   
    
 }
-.agot{
-    width: 40vw;
-}
+
 .bg{
          font-size: 50px;
     font-weight: 700;
@@ -1534,7 +1555,8 @@ width: 40vw;
     
 }
 .maintenance{
-    width: 800px;
+    width: 100%;
+    height: 100%;
 }
 .wela{
      font-size: 18px;
@@ -1768,6 +1790,7 @@ animation: hyena 2s ease-in-out infinite;
 .problem{
     display: flex;
     gap: 29px;
+    flex-wrap: wrap;
 }
 .pd{
     display: flex;
@@ -2134,15 +2157,24 @@ animation: hyena 2s ease-in-out infinite;
     margin-bottom: 70px;
     margin-top: 120px;
 }
-.do{
+.do {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    /* Fits up to 5 columns on wide screens, wraps automatically when narrower */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
     align-items: center;
     justify-items: center;
     width: 70vw;
-    column-gap: 20px;
+    gap: 20px; /* Replaces column-gap so wrapped rows also have 20px vertical spacing */
     justify-self: center;
 }
+
+/* Keeps images inside .do from breaking out of their grid cells */
+.do img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .supa-strike{
   text-align: center;
@@ -2230,7 +2262,7 @@ animation: hyena 2s ease-in-out infinite;
 
     color: white;
     overflow: hidden;
-    box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.15);
+   
 }
 
 
@@ -2444,15 +2476,7 @@ font-family: sans-serif;
     width: 850px;
 }
 
-.cascade{
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    width: 100%;
-    padding-left: 50px;
-   
-    padding-bottom: 90px;
-}
+
 
  nav{
     display: flex;
@@ -2507,7 +2531,7 @@ font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+  
 
 }
 .fuck{
@@ -2579,6 +2603,36 @@ font-family: sans-serif;
 .rear{
     font-size: 22px;
     font-weight: 700;
+}
+.dummy{
+   display: none;
+    
+}
+.cascade{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 10px;
+   
+    padding-bottom: 90px;
+}
+
+.agot{
+    width: fit-content;
+}
+
+.cobalise{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+   padding-top: 0px;
+}
+.html{
+    width: fit-content;
+    
 }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -2741,6 +2795,34 @@ nav{
     font-weight: 600;
     text-align: center;
 }
+
+.cascade{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 50px;
+   
+    padding-bottom: 90px;
+}
+
+.agot{
+    width: fit-content;
+}
+
+.cobalise{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+   padding-top: 0px;
+  
+}
+.html{
+    width: fit-content;
+    
+}
 }
 .faqyu{
     margin-top: 40px;
@@ -2809,4 +2891,8 @@ nav{
     .faq-answer p {
         font-size: 14px;
     }
+    .dummy{
+   display: none;
+    
+}
 }
