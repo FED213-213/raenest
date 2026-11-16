@@ -832,6 +832,7 @@ font-family: sans-serif;
   .content {
     grid-template-columns: 1fr;
     width: min(520px, 90vw);
+    gap: 20px;
   }
 
   .rap {
@@ -1164,7 +1165,7 @@ width: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 2vw;
    
     line-height: 1.4;
    
@@ -1290,7 +1291,13 @@ width: 40vw;
     padding-left: 50px;
     padding-top: 10px;
 }
-
+.bg{
+         font-size: 23px;
+    font-weight: 700;
+    word-spacing: -5px;
+    letter-spacing: -1px;
+    color: black;
+}
 }
 
 .alova{
@@ -1561,13 +1568,6 @@ width: 40vw;
    
 }
 
-.bg{
-         font-size: 50px;
-    font-weight: 700;
-    word-spacing: -5px;
-    letter-spacing: -1px;
-    color: black;
-}
 .html{
     width: 34vw;
     
@@ -2143,10 +2143,11 @@ animation: hyena 2s ease-in-out infinite;
 
 
 
-.two-pound{
+.two-pound {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     column-gap: 10px;
+    row-gap: 10px;
     width: fit-content;
 }
 .disnot{
@@ -2286,6 +2287,14 @@ animation: hyena 2s ease-in-out infinite;
    
 }
 
+.faqyu{
+    margin-top: 40px;
+    width: 100%;
+    padding: 75px 4%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 0;
+}
 
 .receive-card {
     background-image: url("https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/6970bf1187dee404aee42a83_Raenest_India_2-p-500.png");
@@ -2397,7 +2406,7 @@ animation: hyena 2s ease-in-out infinite;
  }
 
 .summer{
-    width: 40vw;
+    width: 150px;
 }
   
 .blue{
@@ -2760,7 +2769,10 @@ font-family: sans-serif;
 
 
 
-
+.disnot{
+    width: 80px;
+   
+}
 
 
 .gnak{
@@ -2870,6 +2882,16 @@ font-family: sans-serif;
     width: 90vw;
     justify-self: center;
 }
+
+
+.faqyu{
+   
+    display: grid;
+    grid-template-columns: 1fr;
+  
+}
+
+
 }
 @media (min-width: 481px) and (max-width: 1024px) {
     .john-wick{
@@ -3158,15 +3180,21 @@ nav{
     width: 90vw;
     justify-self: center;
 }
+
+.summer{
+    width: 150px;
 }
+
+
+
 .faqyu{
-    margin-top: 40px;
-    width: 100%;
-    padding: 75px 4%;
+   
     display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 0;
+    grid-template-columns: 1fr;
+  
 }
+}
+
 
 
 .myyer{
