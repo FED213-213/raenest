@@ -25,7 +25,7 @@
       <div class="frepe">
 <img class="firstima" src="image/raenest.png" alt="" >
 <div class="resdiv">
-<div class="nav-pills" id="pills-tab" role="tablist" >
+<div class="nav-pills" id="pills-tab" role="tablist">
 <div class="nav-item" role="presentation">
 <a class="anc" href="">
 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
@@ -38,8 +38,13 @@ aria-selected="false">Business</button> </a>
  </div>
 </div>
  </div>
- </div>
+</div>
   
+ <div class="menu-icon">
+    <div class="saw"></div>
+    <div class="ruit"></div>
+    <div class="soka"></div>
+</div>
 </div>
  <div class="amazin">
  <div class="john-wick">
@@ -47,6 +52,11 @@ aria-selected="false">Business</button> </a>
 <div class="produc">
 <span class="yujiro">Products</span>
 
+
+
+<div class="awesome">
+
+</div>
 
 <div class="dropdown">
 
@@ -421,10 +431,6 @@ Create an account
 </div>
 </div>
 
-
-<div>
-
-</div>
 </div>
 </div> 
    <div class="damn">
@@ -1146,6 +1152,14 @@ buttons.forEach((button, index) => {
 });
 
 showCard(1);
+
+
+
+const menuIcon = document.querySelector(".menu-icon");
+
+menuIcon.addEventListener("click", () => {
+    menuIcon.classList.toggle("open");
+});
 
 </script>
 </body>

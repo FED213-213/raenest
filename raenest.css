@@ -292,6 +292,51 @@ font-size: 14px;
     display: flex;
     align-items: center;
 }
+
+.menu-icon {
+    position: relative;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: #4F3FD7;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.saw {
+    top: 3px;
+}
+
+.ruit {
+    top: 10px;
+}
+
+.soka {
+    top: 17px;
+}
+
+/* When clicked */
+.menu-icon.open .saw {
+    top: 10px;
+    transform: rotate(45deg);
+}
+
+.menu-icon.open .ruit {
+    opacity: 0;
+}
+
+.menu-icon.open .soka {
+    top: 10px;
+    transform: rotate(-45deg);
+}
+
 .produc:hover .dropdown{
     display: block;
 }
@@ -386,7 +431,7 @@ display: block;
 transform: rotate(0deg);
 }
 .dressa{
-  background-color: rgb(196, 185, 185);
+  background-color: #DDDDDD;
    width: 220px;
    
    position: absolute;
@@ -457,7 +502,7 @@ margin-top: 23px;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #4f3fd7;
-    
+    overflow-x: hidden;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -555,18 +600,10 @@ a{
     text-decoration: none;
     color: black;
 }
-.menu{
-    width: fit-content;
-    height: 40px;
-}
 
 
-.menu-line {
-    width: 20px;
-    height: 20px;
-    background-color: #4f3fd7;
-    border-radius: 5px;
-}
+
+
 .developer{
     width: 100%;
 }
@@ -578,7 +615,7 @@ a{
     height: 50px;
 }
 .white{
-
+    overflow-x: hidden;
     background-color: white;
     
     width: 100%;
@@ -645,8 +682,7 @@ font-family: sans-serif;
     width: 400px;
     max-width: 100%;
     margin-top: 30px;
-    
-
+    flex-wrap: wrap;
 }
 
 .recieve{
@@ -1147,7 +1183,7 @@ width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
 }
 .awees{
@@ -1286,12 +1322,13 @@ width: 40vw;
 .alova{
     width: 100%;
     min-height: 100vh;
-
+    overflow-x: hidden;
 }
 .satinger {
     width: 100%;
     min-height: 100vh;
     padding: 80px 0 40px;
+    overflow-x: hidden;
 }
 .rae{
   display: flex;
@@ -1301,6 +1338,7 @@ width: 40vw;
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .e{
@@ -1357,6 +1395,7 @@ width: 40vw;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     padding: 0 5%;
+    overflow-x: hidden;
 }
 
 .trust::-webkit-scrollbar {
@@ -1436,7 +1475,7 @@ width: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
-   
+   overflow-x: hidden;
 
 }
 
@@ -2221,7 +2260,7 @@ animation: hyena 2s ease-in-out infinite;
     justify-self: center;
 }
 
-/* Keeps images inside .do from breaking out of their grid cells */
+
 .do img {
     max-width: 100%;
     height: auto;
@@ -2292,6 +2331,7 @@ animation: hyena 2s ease-in-out infinite;
     width: 100%;
     position: relative;
     margin-top: 40px;
+    
 }
 
 
@@ -2358,10 +2398,6 @@ animation: hyena 2s ease-in-out infinite;
     font-weight: 500;
 }
 
-
-.inner-first {
-  
-}
 
 
 .raenest-stack .card-content {
@@ -2482,7 +2518,7 @@ animation: hyena 2s ease-in-out infinite;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     align-self: center;
-    padding: 60px;
+    padding: 0px 10px;
 }
 .frepe{
     display: flex;
@@ -2598,7 +2634,7 @@ font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-  
+    overflow-x: hidden;
 
 }
 .fuck{
@@ -2909,6 +2945,26 @@ font-family: sans-serif;
   
 }
 
+.fuck{
+    width: 90%;
+    height: 80vh;
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67e452702a7e4919a57c2a10_Raenest%20for%20business%20cta%20bg.svg);
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mren{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 }
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -3062,7 +3118,9 @@ nav{
     align-items: center;
     justify-content: center;
 }
-
+.atuo{
+   display: none;
+}
 .baki{
     font-family: sans-serif;
     padding-top: 10px;
@@ -3194,6 +3252,26 @@ nav{
     padding: 60px;
 }
 
+
+.fuck{
+    width: 90%;
+    height: 80vh;
+    background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67e452702a7e4919a57c2a10_Raenest%20for%20business%20cta%20bg.svg);
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mren{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 }
 
 
