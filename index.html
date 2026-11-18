@@ -49,6 +49,7 @@ aria-selected="false">Business</button> </a>
 
 
 <div class="toolspan">
+   <div class="align-john">
 <div class="mobile-products-dropdown">
 
 <div class="awesome">
@@ -277,10 +278,87 @@ aria-selected="false">Business</button> </a>
 
 </div>
    </div>
+
+
+  <div class="mobile-earn-dropdown">
+<div class="awesome">
+    <span class="yujiro">Earn</span>
+
+    <img src="image/arrowraenest.png" alt="" width="20px">
+  </div>
+
+<div class="the-dropdown-earn">
+   <div class="everytin">
+<div class="datin">
+      <a href="https://www.raenest.com/referral">
+          <div class="tina">
+         <div class="strez">
+            <img src="https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680ce36fd81697df3fcadbd6_Referrals.svg" alt="">
+         </div>
+         <div>
+          <div class="arrange">
+            <span class="oper">Referral</span>
+          <span class="ropl">Share Ranest and Earn</span>
+          </div>
+         </div>
+      </div>
+      </a>
+  </div>
+
+  <div class="datin">
+       <a href="">
+         <div class="tina">
+         <div class="strez">
+            <img src="https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680ce2ec27b16308a5434836_Creator%20Club.svg" alt="">
+         </div>
+         <div>
+          <div class="arrange">
+            <span class="oper">Creator Club</span>
+          <span class="ropl">Get paid to promote Raenest</span>
+          </div>
+         </div>
+      </div>
+       </a>
+  </div>
+
+  <div class="datin global">
+       <a href="https://www.raenest.com/creator-club">
+         <div class="tina">
+         <div class="strez">
+            <img src="https://cdn.prod.website-files.com/67d8614570bbea9ea5932686/680ce343d4a3798fc70686c3_Rewards.svg" alt="">
+         </div>
+         <div>
+          <div class="arrange">
+            <span class="oper">Rewards</span>
+          <span class="ropl">Earn while you spend</span>
+          </div>
+         </div>
+      </div>
+  </div>
+       </a>
+
+</div>
 </div>
 </div>
 
+
+<div class="awesome">
+   <a href="">
+ <div class="secca">
+   <span class="yujiro">News & Blog</span>
 </div>
+</a>
+</div>
+
+</div>
+ 
+
+
+
+</div>
+
+</div>
+
  <div class="amazin">
  <div class="john-wick">
 
@@ -288,10 +366,6 @@ aria-selected="false">Business</button> </a>
 <span class="yujiro">Products</span>
 
 
-
-<div class="awesome">
-
-</div>
 
 <div class="dropdown">
 
@@ -1396,7 +1470,20 @@ menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("open");
 });
 
+const mobile = document.querySelector(".mobile-products-dropdown");
+const earn = document.querySelector(".mobile-earn-dropdown");
 
+const productsHeading = mobile.querySelector(".awesome");
+const earnHeading = earn.querySelector(".awesome");
+
+productsHeading.addEventListener("click", () => {
+    mobile.classList.toggle("open");
+});
+
+
+earnHeading.addEventListener("click", () => {
+    earn.classList.toggle("active");
+});
 
 </script>
 </body>
