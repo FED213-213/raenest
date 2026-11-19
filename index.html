@@ -49,18 +49,17 @@ aria-selected="false">Business</button> </a>
 
 
 <div class="toolspan">
-   <div class="align-john">
-<div class="mobile-products-dropdown">
 
+   <div class="putting-dp-all">
+   <div class="align-john">
+
+<div class="mobile-products-dropdown">
 <div class="awesome">
 <span class="yujiro">Products</span>
-
 <img src="image/arrowraenest.png" alt="" width="20px">
 </div>
-
 <div class="the-dropdown-products">
-
-      <div class="everytin">
+ <div class="everytin">
  <div class="datin">
           <a href="https://www.raenest.com/send-money">
              <div class="tina">
@@ -277,11 +276,7 @@ aria-selected="false">Business</button> </a>
 
 
 </div>
-   </div>
-
-
- 
-
+</div>
 </div>
  
  <div class="mobile-earn-dropdown">
@@ -353,11 +348,54 @@ aria-selected="false">Business</button> </a>
 </div>
 </a>
 </div>
+</div>
 
+
+<div class="English">
+   <div>
+   <img src="https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/6a8ad5b610c1d2eadf1f2178_united-kingdom%20(1).png" alt="" class="grateful">
+   <span class="yuichiro">English</span>
+   <img src="image/blackdrop.png" alt="" class="why">
+      </div>
+   <div class="liva">
+    <div class="elvis">
+       <span class="esado cool">English</span>
+     <span class="esado">Spanish (Argentina)</span>
+     <span class="esado">French</span>
+     <span class="esado">Portuguese (Brazil)</span>
+     <span class="esado">Spanish (Colombia)</span> 
+    </div>
+   </div>
+
+</a>
 
 </div>
 
+<div class="gappin-login-create">
+   <div class="the-dp-login">
+<a class="anchor" href="https://app.raenest.com/">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDov...laIiBmaWxsPSJjdXJyZW50Q29sb3IiPjwvcGF0aD48L3N2Zz4=" alt="">
+Login
 </div>
+</a>
+<div class="dp-createacct">
+<a class="anchor" href="https://app.raenest.com/register">
+   <span>
+   Create an account
+   </span>
+</a>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+
+
+
 
  <div class="amazin">
  <div class="john-wick">
@@ -686,8 +724,8 @@ aria-selected="false">Business</button> </a>
    
 </div>
 
-
 </div>
+
 </nav>
 
 
@@ -918,7 +956,7 @@ Create an account
         </div>
     </div>
 
-    <!-- Card 4 -->
+    
     <div class="stack-card send-card">
         <h3>Send money</h3>
 
@@ -1472,9 +1510,11 @@ menuIcon.addEventListener("click", () => {
 
 const mobile = document.querySelector(".mobile-products-dropdown");
 const earn = document.querySelector(".mobile-earn-dropdown");
+const english = document.querySelector(".English")
 
 const productsHeading = mobile.querySelector(".awesome");
 const earnHeading = earn.querySelector(".awesome");
+const liva = english.querySelector("div")
 
 productsHeading.addEventListener("click", () => {
     mobile.classList.toggle("open");
@@ -1485,6 +1525,9 @@ earnHeading.addEventListener("click", () => {
     earn.classList.toggle("active");
 });
 
+
+liva.addEventListener("click", () => {
+   english.classList.toggle("hover")});
 </script>
 </body>
 </html>

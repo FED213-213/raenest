@@ -21,7 +21,7 @@ body{
 .collect{
     display: flex;
     align-items: center;
-    gap: clamp(2vw, 4vw, 20vw);
+    gap: clamp(2vw, 3vw, 40px);
     width: 100%;    
     justify-content: center;
     z-index: 10;
@@ -29,11 +29,22 @@ body{
     padding: 0px;
     position: relative;
  } 
+
+
+  @media (min-width: 1020px) and (max-width: 1229px)
+ {
+    .nawa{
+        margin: 0 clamp(1rem, 2vw, 20px) 0 clamp(1.5rem, 60vw, 30px);
+    }
+ }
+
+
  @media (min-width: 1024px) and (max-width: 1229px)
  {
     .collect{
         gap: 0px;
     }
+
  }
  .rewad{
     display: flex;
@@ -171,6 +182,7 @@ width: 20px;
 font-weight: 600;
 font-family: inherit;
 font-size: 13px;
+cursor: pointer;
 }
 .tina{
     display: flex;
@@ -308,13 +320,20 @@ font-size: 14px;
     top: 100%;
     left: 0;
     width: 100%;
-    min-height: 100vh;
+    height: calc(100svh);
     background-color: white;
     box-sizing: border-box;
     display: none;
     z-index: 1000;
-    overflow-y: scroll;
-    padding-bottom: 30px;
+    overflow: scroll;
+    padding-bottom: 20vh;
+    scrollbar-width: none;
+    transition: height 0.5s, transform 400ms;
+    transform: translateY(0px);
+    
+}
+.menu-icon{
+    display: none;
 }
 
 .menu-icon.open + .toolspan {
@@ -324,7 +343,7 @@ font-size: 14px;
     background-color: white;
    width: 100%;
    
-   
+    height: 80vh;
    border-radius: 15px;
   
    overflow-y: scroll;
@@ -337,9 +356,20 @@ font-size: 14px;
    justify-self: center;
 }
 .align-john{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     scrollbar-width: none;
     overflow-y: scroll;
+    max-height: 400vh;
+}
+.putting-dp-all{
+ width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: stretch;
+height: 100%;
+flex-flow: column;
+overflow: auto;
 }
 .the-dropdown-earn{
     background-color: white;
@@ -361,6 +391,7 @@ font-size: 14px;
 .mobile-products-dropdown{
 width: 100%;
 position: relative;
+
 }
 
 .mobile-earn-dropdown{
@@ -379,6 +410,7 @@ position: relative;
     height: 24px;
     cursor: pointer;
     padding-right: 40px;
+    
 }
 
 .menu-icon div {
@@ -427,7 +459,10 @@ font-weight: 400;
 font-family: inherit;
 font-size: 15px;
 margin-left: 10px; 
+cursor: pointer;
 }
+
+
 
 .nawa{
     display: flex;
@@ -435,19 +470,54 @@ margin-left: 10px;
     justify-content: center;
   
   
-  margin: 0 clamp(1rem, 5.5vw, 60px) 0 clamp(1.5rem, 60vw, 87px);
+  margin: 0 clamp(1rem, 5.5vw, 30px) 0 clamp(1.5rem, 60vw, 85px);
 }
- @media (min-width: 1028px) and (max-width: 1229px)
- {
-    .nawa{
-        margin: 0 clamp(1rem, 2vw, 60px) 0 clamp(1.5rem, 60vw, 30px);
-    }
- }
+
+
+
 .secca{
     min-width: fit-content;
     max-width: fit-content;
 }
+.the-dp-login{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 80%;
+   height: 38px;
+   border: 1px solid #4f3fd7;
+   border-radius: 13px;
+   color: #4f3fd7;
+   font-family: sans-serif;
+   font-size: 13px;
+   font-weight: 550;
+   align-self: center;
+   justify-self: center;
+}
 
+.dp-createacct{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80%;
+height: 38px;
+border-radius: 10px;
+color: white;
+font-family: sans-serif;
+font-size: 13px;
+font-weight: 600;
+background-color: #4f3fd7;
+align-self: center;
+   justify-self: center;
+}
+.dp-createacct .span{
+    color: white;
+}
+.gappin-login-create{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 .login{
    display: flex;
    align-items: center;
@@ -497,7 +567,38 @@ background-color: #4f3fd7;
    display: none;
    
 }
+.English{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  
+  
+  
+}
 
+.English.hover .liva{
+    display: block;
+}
+
+.English:hover .why{
+transform: rotate(0deg);
+}
+.liva{
+     background-color: #DDDDDD;
+   width: 220px;
+   
+
+   border-radius: 15px;
+   padding: 10px 10px 40px 10px;
+   top: 90%;
+   left: 60px;
+   bottom: auto;
+  
+  display: none;
+    transition: opacity 0.3s ease-in-out visibility 0.2s ease-in-out;
+}
 .jordan{
      position: relative;
     cursor: pointer;
@@ -699,7 +800,7 @@ a{
 .white{
     overflow-x: hidden;
     background-color: white;
-    
+    overflow-y: none;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -1332,11 +1433,12 @@ width: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2vw;
+    width: auto;
     background-color: #24201E;
     border-radius: 10px;
-    height: 40px;
+    height: auto;
     gap: 5px;
+    flex-wrap: wrap;
 
 }
 .fms{
@@ -2191,7 +2293,7 @@ animation: hyena 2s ease-in-out infinite;
 .giden {
   display: flex;
   flex-wrap: wrap;
- 
+    
   gap: 24px;
 }
 .conta{
@@ -2206,7 +2308,8 @@ animation: hyena 2s ease-in-out infinite;
   border-radius: 20px;
   padding: 12px;
   background: #ffffff;
-  
+  justify-self: center;
+    align-self: center;
   width: fit-content;
 }
 
@@ -2297,14 +2400,14 @@ animation: hyena 2s ease-in-out infinite;
 
 
 .two-pound {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
     width: fit-content;
 }
 .disnot{
-    width: 15vw;
+    width: 30vw;
     height: 45px;
     border-radius: 10px;
     border: 1px solid #CCCCCC;
@@ -2546,7 +2649,7 @@ animation: hyena 2s ease-in-out infinite;
      .collect{
     display: flex;
     align-items: center;
-    
+   
     width: 100%;
      box-sizing: border-box;
    
@@ -2564,7 +2667,7 @@ animation: hyena 2s ease-in-out infinite;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #4f3fd7;
-    height: 90vh;
+   
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -2595,7 +2698,7 @@ animation: hyena 2s ease-in-out infinite;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 400px 0 40px 0;
+    padding: 0px 0 40px 0;
 }
 .viddy{
     display: grid;
@@ -2645,15 +2748,18 @@ font-family: sans-serif;
     bottom: 0px;
 
 }
+.menu-icon{
+    display: block;
+}
 .damn{
     width: 90vw;
     background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680a8cd600a89f0fd7559812_personal%20hero%20mobile.webp);
     background-size: 95vw;
     background-position: center left -20px;
-    height: 750px;
+    height: 300px;
     background-repeat: no-repeat;
     position: relative;
-    top: -200px;
+    top: 5px;
     left: 10px;
     bottom: auto;
     z-index: 40;
@@ -2671,7 +2777,7 @@ font-family: sans-serif;
 
  nav{
     display: flex;
-    height: 70px;
+    min-height: 70px;
     justify-content: center;
     width: 100%;
     position: sticky;
@@ -2712,6 +2818,8 @@ font-family: sans-serif;
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+  justify-content: center;
+    align-content: center;
 }
 .atuo{
    display: none;
@@ -2912,9 +3020,12 @@ font-family: sans-serif;
 }
 
 .disnot{
-    width: 80px;
+    width: 150px;
    
 }
+
+
+
 
 
 .gnak{
@@ -3051,6 +3162,8 @@ font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    overflow-x: auto;
 }
 
 .amazin{
@@ -3059,6 +3172,18 @@ font-family: sans-serif;
     justify-content: center;
     display: none;
 }
+.putting-dp-all{
+flex-flow: column;
+justify-content: space-between;
+align-items: stretch;
+height: 100%;
+ overflow: auto;
+}
+    .dummy{
+   display: none;
+    
+}
+
 }
 @media (min-width: 481px) and (max-width: 1024px) {
     .john-wick{
@@ -3097,7 +3222,7 @@ font-family: sans-serif;
     justify-content: center;
     overflow-y: hidden;
     overflow-x: hidden;
-   height: 100vh;
+  
 }
 .recieve{
     margin: 0px;
@@ -3110,7 +3235,7 @@ font-family: sans-serif;
   padding-left: 20px;
   padding-right: 20px;
   height: fit-content;
-  padding-top: 480px;
+  padding-top: 20px;
 }
 .awer{
     width: 100%;
@@ -3171,10 +3296,10 @@ font-family: sans-serif;
     background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680a8cd600a89f0fd7559812_personal%20hero%20mobile.webp);
     background-size: 90vw;
     background-position: center left -40px;
-    height: 750px;
+    height: 600px;
     background-repeat: no-repeat;
     position: relative;
-    top: -70px;
+    top: 90px;
     left: 50px;
     bottom: auto;
     z-index: 40;
@@ -3228,8 +3353,8 @@ nav{
 
 
 .bliey-blue{
-    width: 100%;
-    max-width: 100%;
+    width: 62%;
+    max-width: 62%;
     background-color: #4F3FD7;
     height: 800px;
     max-height: 600px;
@@ -3372,6 +3497,15 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
+.menu-icon{
+    display: block;
+}
+
+    .dummy{
+   display: none;
+    
+}
 }
 
 
@@ -3436,5 +3570,9 @@ nav{
     .dummy{
    display: none;
     
+}
+.disnot{
+    width: 70vw;
+   
 }
 }
