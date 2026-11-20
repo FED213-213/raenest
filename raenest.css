@@ -999,12 +999,13 @@ font-family: sans-serif;
     height: 100%;
     border-radius: 20px;
     display: flex;
-    padding: 0;
+    padding: 10px 10px 0px 10px;
     align-items: center;
     flex-direction: column;
     justify-content: stretch;
     align-self: center;
     justify-self: center;
+    background-color: #F3F3F5;
 }
 .wella{
     background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/680c851c995fd04d3c69dbd0_Geegpay%20testimonal.jpg);
@@ -1018,8 +1019,13 @@ font-family: sans-serif;
     background-color: #e9e9e9;
     border-radius: 18px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
     flex-direction: column;
+}
+.replay{
+    width: 40px;
 }
 .verly{
      background-color: rgba(0, 0, 0, 0.719); 
@@ -1037,7 +1043,7 @@ font-family: sans-serif;
     justify-content: center;
     width: fit-content;
     gap: 10px;
-    margin-top: auto;
+    margin-top: 20px;
     align-items: center;
 }
 .ajolo{
@@ -1437,6 +1443,7 @@ width: 40vw;
     background-color: #24201E;
     border-radius: 10px;
     height: auto;
+    padding: 5px;
     gap: 5px;
     flex-wrap: wrap;
 
@@ -1655,7 +1662,7 @@ width: 40vw;
 }
 .mention{
     width: 100%;
-    height: 100vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1674,6 +1681,7 @@ width: 40vw;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 15px 0px;
 }
 .worder{
      font-size: 3vw;
@@ -1815,20 +1823,37 @@ width: 40vw;
     color: black;
 }
 
-
+.topo{
+    position: relative;
+}
 .hero-image {
     width: 52%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+   
 }
-
-.hero-image img {
+.zieame{
+    position: absolute;
+    top: 260px;
+    bottom: auto;
+    left: -30px;
+    width: 25%;
+}
+.zeame{
+    position: absolute;
+    top: 75px;
+    bottom: auto;
+    left: 230px;
+    width: 23%;
+}
+.ariola {
     width: 100%;
     max-width: 650px;
     height: auto;
     object-fit: contain;
+   
 }
 
 
@@ -1901,6 +1926,7 @@ font-size: 40px;
     align-items: center;
     justify-content: center;
     position: relative;
+    left: -50px;
 }
 
 .taiwan-one{
@@ -1952,6 +1978,61 @@ font-size: 40px;
     grid-template-columns: 1fr 1fr 1fr ;
     align-self: center;
     padding: 60px;
+    gap: 50px;
+}
+
+.corner{
+   display: flex;
+   flex-direction: column;
+    align-self: center;
+   justify-content: center;
+  
+}
+
+
+.saga{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+     align-self: center;
+     justify-self: end;
+    position: relative;
+    width: 40vw;
+    height: 50vh;
+    display: none;
+}
+.saga:hover .tai-one{
+    translate: -50px 0px;
+}
+.saga:hover .tai-two{
+    translate: 2px 0px;
+}
+.saga:hover .tai-three{
+    translate: 60px 0px;
+}
+.tai-one{
+    position: absolute;
+    top: 0px;
+    bottom: auto;
+    left: 20px;
+    rotate: -20deg;
+    transition: translate 0.2s ease-in-out;
+}
+.tai-two{
+    position: absolute;
+     top: 0px;
+      left: -10px;
+    bottom: auto;
+    transform: rotate(-5deg);
+    transition: translate 0.2s ease-in-out;
+}
+.tai-three{
+    position: absolute;
+     top: 0;
+     left: -50px;
+    bottom: auto;
+    transform: rotate(9deg);
+    transition: translate 0.2s ease-in-out;
 }
 .scalp{
     display: grid;
@@ -2824,6 +2905,7 @@ font-family: sans-serif;
 .atuo{
    display: none;
 }
+
 .mention{
     width: 100%;
     height: 100vh;
@@ -2835,7 +2917,7 @@ font-family: sans-serif;
 }
 .fuck{
     width: 90%;
-    height: 80vh;
+    min-height: 80vh;
     background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67e452702a7e4919a57c2a10_Raenest%20for%20business%20cta%20bg.svg);
     border-radius: 20px;
     background-repeat: no-repeat;
@@ -2862,7 +2944,7 @@ font-family: sans-serif;
 }
 .respo{
     margin-top: 20px;
-    width: 55vh;
+    width: 51vw;
     text-align: center;
 
 }
@@ -3183,6 +3265,24 @@ height: 100%;
    display: none;
     
 }
+.zieame{
+    position: absolute;
+    top: 260px;
+    bottom: auto;
+    left: -30px;
+    width: 25%;
+     display: none;
+}
+.zeame{
+    position: absolute;
+    top: 75px;
+    bottom: auto;
+    left: 100px;
+    width: 23%;
+   
+}
+
+
 
 }
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -3480,7 +3580,7 @@ nav{
 
 .fuck{
     width: 90%;
-    height: 80vh;
+    height: auto;
     background-image: url(https://cdn.prod.website-files.com/67d85bdb392a92fa03e2f524/67e452702a7e4919a57c2a10_Raenest%20for%20business%20cta%20bg.svg);
     border-radius: 40px;
     background-repeat: no-repeat;
@@ -3506,48 +3606,107 @@ nav{
    display: none;
     
 }
+
+.worder{
+     font-size: 30px;
+    font-weight: 700;
+    word-spacing: 1px;
+    letter-spacing: -1px;
+    color: white;
+    line-height: 1;
+}
+.cole{
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
 }
 
 
 
-.myyer{
+
+.myyer {
     width: 100%;
 }
 
-
-
 .olorii {
     border-bottom: 1px solid #e5e5e5;
-    padding: 10px 0 10px;
+    padding: 10px 0;
     margin-bottom: 7px;
+}
+
+.olorii summary {
+    list-style: none;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     justify-content: space-between;
-}
-.plussa{
-    width: 20px;
-    background-color: #4F3FD7;
-    height: 20px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.olorii p{
-   
     cursor: pointer;
-    position: relative;
+}
+
+.olorii summary::-webkit-details-marker {
+    display: none;
+}
+
+.olorii summary p {
     font-size: 16px;
     font-weight: 645;
     padding: 0 35px 0 0;
     line-height: 1.5;
     margin: 5px;
 }
-.noice{
+
+.plussa {
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    background-color: #4F3FD7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.plussa img {
+    width: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon when opened */
+.olorii[open] .plussa img {
+    transform: rotate(45deg);
+}
+
+/* Answer */
+.answer {
+    padding: 8px 35px 10px 5px;
+    animation: appear 0.25s ease;
+}
+
+.answer p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.noice {
     display: grid;
     margin-bottom: 100px;
 }
+
 
 @media (max-width: 768px) {
     .faq-section {
